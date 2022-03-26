@@ -1,0 +1,122 @@
+
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	
+   
+}
+
+/*************start ********************/
+
+/**********start body************/
+
+body{
+		 background-color: #ecf2f8;
+		 font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+/*************end body************/
+/***********start global element*********/
+.parent{
+	width:100%;
+	height:100vh;
+	margin: 20px auto;
+	padding: 15px;
+}
+.parent .container{
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(3,auto);
+	gap:10px;
+
+
+}
+/*********meduim and moblie screen*********/
+@media (max-width: 992px){
+	.parent .container {
+	 width: 100%;
+	 height: 100vh;
+	 display: flex;
+	 flex-direction: column;
+}
+}
+/**********start clumn***********/
+.parent .container .col{
+	padding: 12px;
+	border-radius: 7px;
+	-webkit-border-raduis:7px;
+	-moz-border-raduis:7px;
+	border:1px solid transparent;
+	position: relative;
+	color: black;
+}
+.parent .container .col:first-child{
+	grid-area: 1/1/1/3;
+	background-color: #7541c8;
+}
+.parent .container .col:first-child:after{
+    content: "“";
+    font-size: 311.5px;
+    color: white;
+    opacity: 0.5;
+    top: -34px;
+    right: 80px;
+    position: absolute;
+
+}
+.parent .container .col:nth-child(2){
+	grid-area: 1/3/1/3;
+	background-color: #48556a;
+}
+.parent .container .col:nth-child(3){
+	grid-area: 2/1/2/1;
+	 
+	background-color: #fafafa;
+}
+.parent .container .col:nth-child(4){
+	   grid-area: 2/2/2/4;
+	background-color: #19212e;
+
+}
+.parent .container .col:last-child{
+	 grid-area: 1/4/3/4;
+    background-color: #fafafa;
+}
+.parent .container .col img{
+	width: 33px;
+	position: absolute;
+    border: 1px solid #aa0ac5cc;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    margin: 10px;
+}
+.parent .container .col h2{
+	font-size: 1em;
+	margin-left: 35px;
+	color: #f5f5f5;
+}
+
+.parent .container .col h6{
+	color: #e0e0e0;
+	margin-left: 35px;
+	margin-bottom: 10px;
+}
+
+.parent .container .col p:first-of-type{
+	color:  #f5f5f5;
+	margin:10px;
+	font-size: 1em;
+	font-weight: bold;
+}
+.parent .container .col p{
+	color: #bdbdbd;
+	margin:10px;
+}
+#white{
+	color: black;
+	opacity: 73%;
+}
+/**************end css**************/
